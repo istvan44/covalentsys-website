@@ -435,6 +435,35 @@ section.offers .container {
     .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
     .footer-bottom .legal a { margin: 0 9px; }
   }
+
+  /* Honeypot — off-screen so bots see and fill it, humans don't */
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Inline status message — basic, refine later */
+.form-message {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  display: none;
+}
+.form-message.success {
+  display: block;
+  background: #f0f7f0;
+  color: #2a2a2a;
+  border: 1px solid #c8e0c8;
+}
+.form-message.error {
+  display: block;
+  background: #fdf0f0;
+  color: #2a2a2a;
+  border: 1px solid #b84a4a;
+}   
 </style>
 </head>
 <body>
@@ -610,20 +639,30 @@ section.offers .container {
       <div class="contact-block">
         <h3>Send a message</h3>
         <p>I'll get back to you within 24 hours.</p>
-        <form>
+        <form id="contact-form" novalidate>
           <div class="field">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required>
+          </div>
+          <div class="field">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required>
           </div>
           <div class="field">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" required>
           </div>
           <div class="field">
             <label for="message">Message</label>
-            <textarea id="message" name="message"></textarea>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <!-- Honeypot: bots fill this, humans don't see it -->
+          <div class="hp-field" aria-hidden="true">
+            <label for="website">Website</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
           </div>
           <button type="submit" class="btn">Send <span class="arrow">&rarr;</span></button>
+          <div id="form-message" class="form-message" role="status" aria-live="polite"></div>
         </form>
       </div>
     </div>
