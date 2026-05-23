@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Covalent Systems</title>
+<style>
+  :root {
+    --charcoal: #2a2a2a;
+    --charcoal-light: #3a3a3a;
+    --amber: #b84a4a;
+    --amber-light: #d06a6a;
+    --gray-bg: #f5f5f5;
+    --text: #1a1a1a;
+    --text-light: #555555;
+    --white: #ffffff;
+    --border: #e0e0e0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ---- NAV ---- */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    transition: box-shadow 0.3s ease;
+  }
+  nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.06); }
+  .nav-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-brand {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--charcoal);
+    letter-spacing: -0.01em;
+    text-decoration: none;
+  }
+  .nav-brand span { color: var(--amber); }
+  .nav-links { display: flex; gap: 2rem; align-items: center; }
+  .nav-links a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--charcoal); }
+  .nav-cta {
+    background: var(--charcoal) !important;
+    color: var(--white) !important;
+    padding: 0.6rem 1.4rem !important;
+    border-radius: 6px;
+    transition: background 0.2s !important;
+  }
+  .nav-cta:hover { background: var(--charcoal-light) !important; }
+
+  /* ---- PAGE HEADER ---- */
+  .page-header {
+    padding: 9rem 2rem 4rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .page-header-accent {
+    width: 80px;
+    height: 4px;
+    background: var(--amber);
+    border-radius: 2px;
+    margin-bottom: 1.5rem;
+  }
+  .section-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--amber);
+    margin-bottom: 0.75rem;
+  }
+  .page-header h1 {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 700;
+    color: var(--charcoal);
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+  }
+  .page-header p {
+    font-size: 1rem;
+    color: var(--text-light);
+    max-width: 560px;
+    line-height: 1.7;
+  }
+
+  /* ---- CONTENT ---- */
+  .content-section {
+    background: var(--gray-bg);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 4rem 2rem;
+  }
+  .content-inner {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .content-inner h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--charcoal);
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .content-inner h2:first-child { margin-top: 0; }
+  .content-inner p {
+    font-size: 0.97rem;
+    color: var(--text-light);
+    line-height: 1.75;
+    margin-bottom: 1rem;
+  }
+  .content-inner ul {
+    list-style: none;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .content-inner ul li {
+    font-size: 0.97rem;
+    color: var(--text-light);
+    padding-left: 1.2rem;
+    position: relative;
+    line-height: 1.7;
+  }
+  .content-inner ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--amber);
+  }
+  .content-inner a {
+    color: var(--amber);
+    text-decoration: none;
+    border-bottom: 1px solid var(--amber);
+    transition: color 0.2s;
+  }
+  .content-inner a:hover { color: var(--charcoal); border-color: var(--charcoal); }
+
+  /* ---- FOOTER ---- */
+  footer {
+    background: var(--charcoal);
+    color: rgba(255,255,255,0.45);
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.85rem;
+  }
+  footer a { color: rgba(255,255,255,0.6); text-decoration: none; }
+  footer a:hover { color: var(--white); }
+
+  @media (max-width: 768px) {
+    .page-header { padding: 7rem 1.5rem 3rem; }
+    .nav-links a:not(.nav-cta) { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand">Covalent<span>.</span></a>
+    <div class="nav-links">
+      <a href="/#services">Services</a>
+      <a href="/#why">Why Us</a>
+      <a href="/#story">About</a>
+      <a href="/#contact" class="nav-cta">Get in Touch</a>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="page-header-accent"></div>
+  <div class="section-label">Legal</div>
+  <h1>Privacy Policy</h1>
+  <p>Last updated: May 2026. This policy describes how Covalent Systems LLC collects, uses, and protects information.</p>
+</div>
+
+<!-- CONTENT -->
+<section class="content-section">
+  <div class="content-inner">
+
+    <h2>Who We Are</h2>
+    <p>Covalent Systems LLC ("Covalent Systems", "we", "us", or "our") is an AI implementation consulting company based in Irvine, California, serving small and mid-sized businesses. Our website is located at <a href="https://covalentsys.com">covalentsys.com</a>. For questions about this policy, contact us at <a href="mailto:ian@covalentsys.com">ian@covalentsys.com</a>.</p>
+
+    <h2>Information We Collect</h2>
+    <p>We collect information in the following ways:</p>
+    <ul>
+      <li><strong>Contact information you provide</strong> — when you email us or fill out a contact form, we collect your name, email address, phone number, and company name.</li>
+      <li><strong>Voicemail and call data</strong> — if you call our business number, your call may be recorded as a voicemail. We collect the audio recording, an automated transcript of that recording, your caller ID (phone number), and the date and time of the call.</li>
+      <li><strong>Usage data:</strong> we use Cloudflare Web Analytics, a privacy-friendly analytics service that does not use cookies and does not collect personal identifiers. EU visitor data is excluded. Standard web server logs may also capture IP address, browser type, and pages visited.</li>
+    </ul>
+
+    <h2>How We Use Your Information</h2>
+    <p>We use the information we collect solely for legitimate business purposes:</p>
+    <ul>
+      <li>To respond to your inquiries and follow up on voicemails you leave us</li>
+      <li>To create and maintain a contact record in our CRM system (HubSpot) for business communications</strong></li>
+      <li>To send internal operational SMS and email notifications to Covalent Systems staff when a voicemail is received</li>
+      <li>To improve the quality of our services</li>
+    </ul>
+    <p>We do not use your information for marketing purposes without your explicit consent. We do not sell, rent, or share your personal information with third parties for their marketing purposes.</p>
+
+    <h2>SMS Notifications</h2>
+    <p>Covalent Systems uses automated SMS messaging solely for internal operational purposes — specifically to notify our own staff when inbound voicemails are received. These messages are sent only to Covalent Systems personnel. We do not send unsolicited SMS messages to clients, prospects, or any external parties without explicit consent.</p>
+
+    <h2>Data Storage and Security</h2>
+    <p>Your information is stored in HubSpot CRM, a trusted third-party platform. Voicemail recordings are stored temporarily by Twilio, our telephony provider. Transcription and data extraction are processed via OpenAI's API. All providers maintain industry-standard security practices. We retain contact information only as long as necessary for legitimate business purposes.</p>
+
+    <h2>Third-Party Services</h2>
+    <p>We use the following third-party services which may process your data as part of delivering our services:</p>
+    <ul>
+      <li><strong>HubSpot:</strong> CRM and contact management</li>
+      <li><strong>Twilio:</strong> telephony and voicemail processing</li>
+      <li><strong>OpenAI:</strong> speech-to-text transcription and automated data extraction from voicemail recordings</li>
+      <li><strong>Cloudflare:</strong> web hosting and privacy-friendly analytics</li>
+    </ul>
+    <p>Each provider maintains their own privacy policies and data protection practices.</p>
+
+    <h2>Your Rights</h2>
+    <p>You have the right to request access to, correction of, or deletion of any personal information we hold about you. To exercise these rights, contact us at <a href="mailto:ian@covalentsys.com">ian@covalentsys.com</a>. We will respond to all requests within 30 days.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>We may update this privacy policy from time to time. When we do, we will update the "last updated" date at the top of this page. Continued use of our services after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>Contact Us</h2>
+    <p>If you have questions or concerns about this privacy policy, please contact us at <a href="mailto:ian@covalentsys.com">ian@covalentsys.com</a>.</p>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2026 Covalent Systems LLC &nbsp;·&nbsp; <a href="https://covalentsys.com">covalentsys.com</a> &nbsp;·&nbsp; <a href="/privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="/terms.html">Terms &amp; Conditions</a></p>
+</footer>
+
+<script>
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 20);
+});
+</script>
+
+</body>
+</html>

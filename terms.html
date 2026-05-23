@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms &amp; Conditions — Covalent Systems</title>
+<style>
+  :root {
+    --charcoal: #2a2a2a;
+    --charcoal-light: #3a3a3a;
+    --amber: #b84a4a;
+    --amber-light: #d06a6a;
+    --gray-bg: #f5f5f5;
+    --text: #1a1a1a;
+    --text-light: #555555;
+    --white: #ffffff;
+    --border: #e0e0e0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ---- NAV ---- */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    transition: box-shadow 0.3s ease;
+  }
+  nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.06); }
+  .nav-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-brand {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--charcoal);
+    letter-spacing: -0.01em;
+    text-decoration: none;
+  }
+  .nav-brand span { color: var(--amber); }
+  .nav-links { display: flex; gap: 2rem; align-items: center; }
+  .nav-links a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--charcoal); }
+  .nav-cta {
+    background: var(--charcoal) !important;
+    color: var(--white) !important;
+    padding: 0.6rem 1.4rem !important;
+    border-radius: 6px;
+    transition: background 0.2s !important;
+  }
+  .nav-cta:hover { background: var(--charcoal-light) !important; }
+
+  /* ---- PAGE HEADER ---- */
+  .page-header {
+    padding: 9rem 2rem 4rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .page-header-accent {
+    width: 80px;
+    height: 4px;
+    background: var(--amber);
+    border-radius: 2px;
+    margin-bottom: 1.5rem;
+  }
+  .section-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--amber);
+    margin-bottom: 0.75rem;
+  }
+  .page-header h1 {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 700;
+    color: var(--charcoal);
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+  }
+  .page-header p {
+    font-size: 1rem;
+    color: var(--text-light);
+    max-width: 560px;
+    line-height: 1.7;
+  }
+
+  /* ---- CONTENT ---- */
+  .content-section {
+    background: var(--gray-bg);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 4rem 2rem;
+  }
+  .content-inner {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .content-inner h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--charcoal);
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .content-inner h2:first-child { margin-top: 0; }
+  .content-inner p {
+    font-size: 0.97rem;
+    color: var(--text-light);
+    line-height: 1.75;
+    margin-bottom: 1rem;
+  }
+  .content-inner ul {
+    list-style: none;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .content-inner ul li {
+    font-size: 0.97rem;
+    color: var(--text-light);
+    padding-left: 1.2rem;
+    position: relative;
+    line-height: 1.7;
+  }
+  .content-inner ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--amber);
+  }
+  .content-inner a {
+    color: var(--amber);
+    text-decoration: none;
+    border-bottom: 1px solid var(--amber);
+    transition: color 0.2s;
+  }
+  .content-inner a:hover { color: var(--charcoal); border-color: var(--charcoal); }
+
+  /* ---- FOOTER ---- */
+  footer {
+    background: var(--charcoal);
+    color: rgba(255,255,255,0.45);
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.85rem;
+  }
+  footer a { color: rgba(255,255,255,0.6); text-decoration: none; }
+  footer a:hover { color: var(--white); }
+
+  @media (max-width: 768px) {
+    .page-header { padding: 7rem 1.5rem 3rem; }
+    .nav-links a:not(.nav-cta) { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand">Covalent<span>.</span></a>
+    <div class="nav-links">
+      <a href="/#services">Services</a>
+      <a href="/#why">Why Us</a>
+      <a href="/#story">About</a>
+      <a href="/#contact" class="nav-cta">Get in Touch</a>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="page-header-accent"></div>
+  <div class="section-label">Legal</div>
+  <h1>Terms &amp; Conditions</h1>
+  <p>Last updated: May 2026. Please read these terms carefully before engaging Covalent Systems LLC for services.</p>
+</div>
+
+<!-- CONTENT -->
+<section class="content-section">
+  <div class="content-inner">
+
+    <h2>Agreement to Terms</h2>
+    <p>By accessing our website at <a href="https://covalentsys.com">covalentsys.com</a> or engaging Covalent Systems LLC for services, you agree to be bound by these Terms and Conditions. If you do not agree, please do not use our website or services.</p>
+
+    <h2>Services</h2>
+    <p>Covalent Systems LLC provides AI implementation consulting, automation, and workflow integration services to small and mid-sized businesses. Specific service terms, deliverables, timelines, and pricing are defined in individual project agreements or statements of work agreed upon in writing between Covalent Systems LLC and the client.</p>
+
+    <h2>SMS Messaging Program</h2>
+    <p>Covalent Systems LLC operates an internal SMS notification program for operational purposes. The following terms apply:</p>
+    <ul>
+      <li><strong>Program description:</strong> Automated SMS notifications are sent to Covalent Systems staff to alert them of inbound voicemails and business communications.</li>
+      <li><strong>Message frequency:</strong> Message frequency varies based on inbound call volume. You may receive multiple messages per day.</li>
+      <li><strong>Message and data rates:</strong> Standard message and data rates may apply depending on your mobile carrier and plan.</li>
+      <li><strong>Opt-out:</strong> To stop receiving messages, reply STOP to any message. You will receive a confirmation and no further messages will be sent.</li>
+      <li><strong>Help:</strong> For assistance, reply HELP to any message or contact us at <a href="mailto:ian@covalentsys.com">ian@covalentsys.com</a>.</li>
+      <li><strong>Carriers:</strong> Covalent Systems LLC is not liable for delayed or undelivered messages due to carrier issues.</li>
+    </ul>
+
+    <h2>Intellectual Property</h2>
+    <p>All content on this website — including text, design, graphics, and code — is the property of Covalent Systems LLC and is protected by applicable intellectual property laws. Custom automation tools, workflows, and systems built for clients remain the property of the client upon full payment unless otherwise specified in the project agreement.</p>
+
+    <h2>Limitation of Liability</h2>
+    <p>Covalent Systems LLC provides services on an "as is" basis. We make no warranties, express or implied, regarding the fitness of any deliverable for a particular purpose. Our total liability for any claim arising from our services shall not exceed the amount paid by the client for the specific service giving rise to the claim.</p>
+
+    <h2>Confidentiality</h2>
+    <p>We treat all client information, business data, and proprietary workflows as confidential. We will not disclose client information to third parties without explicit written consent, except as required by law or as necessary to deliver agreed services using trusted third-party platforms.</p>
+
+    <h2>Governing Law</h2>
+    <p>These terms are governed by the laws of the State of California. Any disputes arising from these terms or our services shall be resolved in the courts of Orange County, California.</p>
+
+    <h2>Changes to These Terms</h2>
+    <p>We may update these terms from time to time. We will update the "last updated" date at the top of this page when changes are made. Continued use of our website or services after changes constitutes acceptance of the updated terms.</p>
+
+    <h2>Contact Us</h2>
+    <p>For questions about these terms, contact us at <a href="mailto:ian@covalentsys.com">ian@covalentsys.com</a>.</p>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2026 Covalent Systems LLC &nbsp;·&nbsp; <a href="https://covalentsys.com">covalentsys.com</a> &nbsp;·&nbsp; <a href="/privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="/terms.html">Terms &amp; Conditions</a></p>
+</footer>
+
+<script>
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 20);
+});
+</script>
+
+</body>
+</html>
