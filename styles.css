@@ -53,7 +53,7 @@
   .wordmark {
     display: inline-block; background: var(--charcoal); color: var(--white);
     padding: 8px 14px 12px; border-radius: 6px;
-    font-weight: 600; font-size: 14px; letter-spacing: 0.01em;
+    font-weight: 600; font-size: 16px; letter-spacing: 0.01em;
     position: relative; text-decoration: none;
   }
   .wordmark::after {
@@ -61,11 +61,11 @@
     left: 14px; right: 14px; bottom: 6px; height: 2px;
     background: var(--brick);
   }
-  .nav-links { display: flex; align-items: center; gap: 28px; font-size: 14px; }
+  .nav-links { display: flex; align-items: center; gap: 28px; font-size: 16px; }
   .nav-links a { color: var(--charcoal); font-weight: 400; }
   .nav-links a:hover { color: var(--brick); }
   .nav-right { display: flex; align-items: center; gap: 20px; }
-  .nav-phone { color: var(--text-secondary); font-size: 14px; font-variant-numeric: tabular-nums; }
+  .nav-phone { color: var(--text-secondary); font-size: 16px; font-variant-numeric: tabular-nums; }
   .nav-phone:hover { color: var(--charcoal); }
 
   /* ============ BUTTONS ============ */
@@ -80,7 +80,7 @@
   .btn:hover { background: var(--charcoal); border-color: var(--charcoal); color: var(--white); }
   .btn .arrow { transition: transform 0.2s ease; display: inline-block; }
   .btn:hover .arrow { transform: translateX(3px); }
-  .btn.small { padding: 9px 16px; font-size: 14px; }
+  .btn.small { padding: 9px 16px; font-size: 16px; }
 
   /* ============ HERO WITH IAN'S IMAGE ============ */
   section.hero {
