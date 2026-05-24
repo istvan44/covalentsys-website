@@ -164,7 +164,7 @@
   .stat-label { font-size: 15px; color: var(--text-secondary); line-height: 1.45; }
 
   /* ============ NARRATIVE ============ */
-  section.narrative { padding: 120px 0; background: var(--paper); }
+  section.narrative { padding: 120px 0; background: #ebe9e2; }
   .narrative .container { max-width: 720px; }
   .narrative h2 { font-size: 40px; margin-bottom: 32px; letter-spacing: -0.02em; }
   .narrative p { font-size: 18px; line-height: 1.65; margin-bottom: 22px; color: var(--charcoal); }
@@ -227,7 +227,7 @@
   .flow-footer strong { color: var(--charcoal); font-weight: 500; }
 
   /* ============ WHAT I BUILD ============ */
-  section.build { padding: 120px 0; background: var(--paper); }
+  section.build { padding: 120px 0; background: #ebe9e2; }
   .section-head { margin-bottom: 56px; max-width: 720px; }
   .section-head h2 { font-size: 40px; margin-bottom: 20px; letter-spacing: -0.02em; }
   .section-head .lead { font-size: 18px; color: var(--text-secondary); line-height: 1.5; }
@@ -259,7 +259,7 @@
   .offer-card p { font-size: 15px; color: var(--text-secondary); line-height: 1.55; }
 
   /* ============ CONTACT ============ */
-  section.contact { padding: 120px 0; background: var(--paper); }
+  section.contact { padding: 120px 0; background: #ebe9e2; }
   .contact-grid {
     display: grid; grid-template-columns: 1fr 1.3fr; gap: 64px;
     align-items: start; max-width: 1000px;
