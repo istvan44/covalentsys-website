@@ -65,8 +65,8 @@
   .nav-links a { color: var(--charcoal); font-weight: 500; }
   .nav-links a:hover { color: var(--brick); }
   .nav-right { display: flex; align-items: center; gap: 20px; }
-  .nav-phone { color: var(--text-secondary); font-weight: 500; font-size: 16px; font-variant-numeric: tabular-nums; }
-  .nav-phone:hover { color: var(--charcoal); }
+  .nav-phone { color: var(--charcoal); font-weight: 500; font-size: 16px; font-variant-numeric: tabular-nums; }
+  .nav-phone:hover { color: var(--brick); }
 
   /* ============ BUTTONS ============ */
   .btn {
