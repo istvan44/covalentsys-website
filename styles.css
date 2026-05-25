@@ -542,3 +542,16 @@ body.inner-page section.contact .container {
     background-attachment: scroll;
   }
 }
+
+/* ============ INNER-PAGE PAGE-HEADER ADJUSTMENT ============ */
+body.inner-page .page-header::before {
+  background-attachment: fixed;
+}
+body.inner-page .page-header::after {
+  background: rgba(255, 255, 255, 0.85);
+}
+@media (max-width: 880px) {
+  body.inner-page .page-header::before {
+    background-attachment: scroll;
+  }
+}
