@@ -97,7 +97,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url('hero-bg.jpg');
+    background-image: url('images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     z-index: -2;
@@ -326,7 +326,7 @@ section.offers::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('hero-bg.jpg');
+  background-image: url('images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -428,7 +428,7 @@ section.page-header {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('hero-bg.jpg');
+  background-image: url('images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   z-index: -2;
@@ -514,7 +514,7 @@ body.inner-page section.contact::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('hero-bg.jpg');
+  background-image: url('images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
