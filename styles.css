@@ -410,3 +410,92 @@ section.offers .container {
   color: #2a2a2a;
   border: 1px solid #b84a4a;
 }   
+
+/* ============================================================
+   ADDITIONS for inner pages (about.html, work.html, contact.html)
+   Append to the end of your existing styles.css.
+   ============================================================ */
+
+/* ============ INNER PAGE HEADER ============ */
+section.page-header {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 80px 0;
+  background: var(--paper);
+}
+.page-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+.page-header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    rgba(245,244,241,0.75) 0%,
+    rgba(245,244,241,0.60) 50%,
+    rgba(245,244,241,0.45) 100%
+  );
+  z-index: -1;
+}
+.page-header .container {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+}
+.page-header h1 {
+  font-size: 44px;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+.page-header .tagline {
+  font-size: 19px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  max-width: 580px;
+}
+
+@media (max-width: 880px) {
+  section.page-header { padding: 60px 0; }
+  .page-header h1 { font-size: 32px; }
+  .page-header .tagline { font-size: 17px; }
+}
+
+/* ============ ACTIVE NAV STATE ============ */
+.nav-links a.active {
+  text-decoration: underline;
+  text-decoration-color: var(--brick);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+/* ============ SCAFFOLD NOTE (remove before launch) ============ */
+.scaffold-note {
+  background: #fff8e1;
+  border-left: 3px solid #d4a72c;
+  padding: 14px 18px;
+  margin: 24px 0;
+  font-size: 14px;
+  line-height: 1.55;
+  color: #5e4a0e;
+  border-radius: 0 4px 4px 0;
+}
+.scaffold-note strong {
+  color: #3d2f00;
+  font-weight: 500;
+}
+.scaffold-note ul {
+  margin: 8px 0 0 0;
+  padding-left: 20px;
+}
+.scaffold-note ul li {
+  margin-bottom: 4px;
+}
