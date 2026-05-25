@@ -555,3 +555,50 @@ body.inner-page .page-header::after {
     background-attachment: scroll;
   }
 }
+/* ============ BIO PHOTO (About page, magazine-style float) ============ */
+.bio-photo {
+  float: left;
+  margin: 4px 32px 16px 0;
+  text-align: center;
+  width: 200px;
+}
+.bio-photo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--brick);
+  display: block;
+  margin: 0 auto;
+}
+.bio-photo figcaption {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.bio-photo figcaption strong {
+  display: block;
+  font-weight: 500;
+  color: var(--charcoal);
+}
+.bio-photo figcaption span {
+  display: block;
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+/* Clear the float so the CTA section below isn't pulled up */
+section.narrative .container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Mobile: stack the photo above the bio rather than floating */
+@media (max-width: 880px) {
+  .bio-photo {
+    float: none;
+    margin: 0 auto 24px;
+  }
+}
