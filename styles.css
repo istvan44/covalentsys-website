@@ -499,3 +499,46 @@ section.page-header {
 .scaffold-note ul li {
   margin-bottom: 4px;
 }
+
+/* ============ INNER-PAGE BACKGROUND CONTINUATION ============ */
+body.inner-page section.narrative,
+body.inner-page section.contact {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: transparent;
+}
+
+body.inner-page section.narrative::before,
+body.inner-page section.contact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -2;
+}
+
+body.inner-page section.narrative::after,
+body.inner-page section.contact::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: -1;
+}
+
+body.inner-page section.narrative .container,
+body.inner-page section.contact .container {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 880px) {
+  body.inner-page section.narrative::before,
+  body.inner-page section.contact::before {
+    background-attachment: scroll;
+  }
+}
