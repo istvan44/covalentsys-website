@@ -116,7 +116,7 @@
     z-index: -1;
   }
   .hero-grid {
-    width: 100%; max-width: 720px; margin: 0 auto; padding: 0 32px;
+    width: 100%; max-width: 1080px; margin: 0 auto; padding: 0 32px;
     position: relative;
     z-index: 1;
   }
@@ -165,7 +165,7 @@
 
   /* ============ NARRATIVE ============ */
   section.narrative { padding: 120px 0; background: #ecedef; }
-  .narrative .container { max-width: 720px; }
+  .narrative .container { max-width: 1080px; }
   .narrative h2 { font-size: 40px; margin-bottom: 32px; letter-spacing: -0.02em; }
   .narrative p { font-size: 18px; line-height: 1.65; margin-bottom: 22px; color: var(--charcoal); }
   .pull-quote {
@@ -176,7 +176,7 @@
 
   /* ============ FLOW SECTION ============ */
   section.flow-section { padding: 120px 0; background: var(--white); }
-  .flow-section .section-head { margin-bottom: 64px; max-width: 720px; }
+  .flow-section .section-head { margin-bottom: 64px; max-width: 1080px; }
   .flow-section h2 { font-size: 40px; margin-bottom: 20px; letter-spacing: -0.02em; }
   .flow-section .lead { font-size: 18px; color: var(--text-secondary); line-height: 1.5; }
   .flow-grid {
@@ -228,7 +228,7 @@
 
   /* ============ WHAT I BUILD ============ */
   section.build { padding: 120px 0; background: #ecedef; }
-  .section-head { margin-bottom: 56px; max-width: 720px; }
+  .section-head { margin-bottom: 56px; max-width: 1080px; }
   .section-head h2 { font-size: 40px; margin-bottom: 20px; letter-spacing: -0.02em; }
   .section-head .lead { font-size: 18px; color: var(--text-secondary); line-height: 1.5; }
   .value-list { list-style: none; max-width: 880px; }
@@ -448,7 +448,7 @@ section.page-header {
 .page-header .container {
   position: relative;
   z-index: 1;
-  max-width: 720px;
+  max-width: 1080px;
 }
 .page-header h1 {
   font-size: 44px;
