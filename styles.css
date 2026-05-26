@@ -509,6 +509,10 @@ body.inner-page section.contact {
   background: transparent;
 }
 
+body.inner-page section.narrative + section.narrative {
+  padding-top: 0;
+}
+
 body.inner-page section.narrative::before,
 body.inner-page section.contact::before {
   content: "";
