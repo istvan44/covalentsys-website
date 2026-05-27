@@ -606,3 +606,50 @@ section.narrative .container::after {
     margin: 0 auto 24px;
   }
 }
+
+/* ============ BRIDGE (home page → inner pages) ============ */
+section.bridge { padding: 120px 0; background: #ecedef; }
+.bridge-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 8px;
+}
+.bridge-card {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--charcoal);
+  border-radius: 6px;
+  padding: 32px 28px;
+  text-decoration: none;
+  color: var(--charcoal);
+  display: block;
+  transition: transform 0.2s ease, border-top-color 0.2s ease;
+}
+.bridge-card:hover {
+  transform: translateY(-2px);
+  border-top-color: var(--brick);
+}
+.bridge-card h3 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+  color: var(--charcoal);
+}
+.bridge-card p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin-bottom: 16px;
+}
+.bridge-link {
+  color: var(--brick);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+@media (max-width: 880px) {
+  section.bridge { padding: 70px 0; }
+  .bridge-grid { grid-template-columns: 1fr; }
+}
